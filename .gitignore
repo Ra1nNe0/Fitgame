@@ -1,0 +1,78 @@
+# ===== Unity =====
+# Папки, которые Unity создаёт сам и пересобирает при открытии проекта.
+# Шаблоны без ведущего "/" — работают, даже если проект лежит в подпапке.
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Папка Assets должна попадать в репозиторий целиком, вместе с .meta
+!**/[Aa]ssets/**/*.meta
+
+# Кэш Asset Store и плагинов
+[Aa]ssets/AssetStoreTools*
+[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Автогенерируемые файлы Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Meta-файлы отладочных символов
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Отчёты о сбоях и сборках
+sysinfo.txt
+crashlytics-build.properties
+*.stackdump
+
+# Готовые сборки
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Addressables
+[Aa]ssets/AddressableAssetsData/*/*.bin*
+[Aa]ssets/StreamingAssets/aa.meta
+[Aa]ssets/StreamingAssets/aa/*
+
+# ===== Система =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Python (запасной вариант распознавания позы) =====
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ===== Секреты =====
+.env
+*.keystore
