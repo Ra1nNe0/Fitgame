@@ -1,0 +1,57 @@
+Автотест классификатора движений на синтетических последовательностях
+Дата: 19.10.2026
+
+=== Камера 2.6 м (видно всё тело), строгость 1.0, 3 серии ===
+
+Idle             n=108  None:108  
+Weak:Jump        n= 18  None:18  
+Punch            n= 36  Punch:36   avgQ=0.97
+HandsUp          n= 36  HandsUp:36   avgQ=1.00
+Weak:Squat       n= 18  None:18  
+Squat            n= 36  Squat:36   avgQ=0.79
+Weak:HandsUp     n= 18  None:18  
+Jump             n= 36  Jump:33  WeakJump:2  HandsUp:1   avgQ=0.82
+Weak:Punch       n= 18  None:18  
+
+Accuracy: 321/324 = 99.1%
+Latency from onset: median 0.30 s
+
+=== Камера 1.7 м (лодыжки вне кадра), строгость 1.0, 3 серии ===
+
+Idle             n=108  None:108  
+Punch            n= 36  Punch:36   avgQ=0.96
+HandsUp          n= 36  HandsUp:36   avgQ=0.99
+Weak:Squat       n= 18  None:18  
+Squat            n= 36  Squat:36   avgQ=0.72
+Weak:Jump        n= 18  None:18  
+Jump             n= 36  Jump:36   avgQ=0.83
+Weak:Punch       n= 18  None:18  
+Weak:HandsUp     n= 18  None:18  
+
+Accuracy: 324/324 = 100.0%
+Latency from onset: median 0.30 s
+
+=== Сильный шум (x2.3 на картинке, x3 в метрах), строгость 1.0 ===
+
+Weak:HandsUp     n= 12  None:10  WeakHandsUp:2  
+Idle             n= 72  None:72  
+Punch            n= 24  Punch:24   avgQ=0.88
+Weak:Punch       n= 12  None:12  
+Weak:Squat       n= 12  None:12  
+Jump             n= 24  Jump:22  HandsUp:2   avgQ=0.75
+HandsUp          n= 24  HandsUp:24   avgQ=0.98
+Weak:Jump        n= 12  None:12  
+Squat            n= 24  Squat:24   avgQ=0.79
+
+Accuracy: 214/216 = 99.1%
+Latency from onset: median 0.30 s
+
+=== Сильный шум, строгость 1.25 ===
+
+Accuracy: 209/216 = 96.8%
+Latency from onset: median 0.33 s
+
+=== Без шума, строгость 0.8 ===
+
+Accuracy: 216/216 = 100.0%
+Latency from onset: median 0.30 s

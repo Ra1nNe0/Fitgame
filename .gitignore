@@ -76,3 +76,8 @@ venv/
 # ===== Секреты =====
 .env
 *.keystore
+
+# Упакованный сервер камеры (собирается Tools/pose_build/build_pose_server.bat)
+Tools/pose_build/dist/
+Tools/pose_build/work/
+CLAUDE.md
